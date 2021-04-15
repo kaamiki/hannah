@@ -41,10 +41,10 @@ def test_io_base_rotate() -> None:
 @pytest.mark.parametrize(
     ("props", "expected"),
     (
-        ("parent", "/home/xames3/workshop/repositories/hannah"),
+        ("parent", HERE),
         ("basename", "io_helper_test.txt"),
         ("suffix", ".txt"),
-        ("size", 16),
+        ("size", os.path.getsize(PATH)),
         ("siblings", ["io_helper_test.txt"]),
         ("index", 1),
         ("lines", 1),
