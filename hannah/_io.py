@@ -136,32 +136,32 @@ class IOBase(object):
             )
 
     def read(self, size: int) -> None:
-        """..."""
+        """Read string from the file."""
 
         self._unsupported("read")
 
     def readline(self, limit: int) -> None:
-        """..."""
+        """Read line from the file."""
 
         self._unsupported("readline")
 
     def readlines(self, hint: int) -> None:
-        """..."""
+        """Read lines from the file."""
 
         self._unsupported("readlines")
 
     def write(self, *args: Any) -> None:
-        """..."""
+        """Write string to the file."""
 
         self._unsupported("write")
 
     def writelines(self, lines: Iterable[Any]) -> None:
-        """..."""
+        """Write lines to the file."""
 
         self._unsupported("writelines")
 
     def rotate(self) -> None:
-        """..."""
+        """Rotate file."""
 
         self._unsupported("rotate")
 
